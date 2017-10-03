@@ -6,3 +6,20 @@ h1{text-align: center;
      
 }
 h5{text-align: center;}
+
+.centre-wrap{
+    
+    overflow:hidden;
+    
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 2px;
+    border-right: 2px;
+    border-color: black;
+    border-style: solid;
+    
+    
+}
