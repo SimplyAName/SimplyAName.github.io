@@ -1,10 +1,41 @@
-p{
-    text-align: center;
+.p-wrap-left{
+    
+    overflow:hidden;
+    
+    clear: both;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    
+}
+
+.p-wrap-left img{
+    
+    float: left;
+}
+
+.p-wrap-right{
+    
+    overflow:hidden;
+    
+    clear: both;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    
+}
+
+.p-wrap-right img{
+    
+    float: right;
+    
+}
+
+.p-wrap-right p{
+    
+    /padding: 10px;
+    text-align: right;
 }
 
 img{
-    display: block;
-    margin: auto;
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
 }
