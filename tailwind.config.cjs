@@ -11,6 +11,9 @@ module.exports = {
       colors: {
         "simply-purple": "#4D2DB7",
       },
+      backgroundSize: {
+        "h-screen": "h-screen",
+      },
     },
   },
   plugins: [],
