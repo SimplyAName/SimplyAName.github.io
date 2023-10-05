@@ -1,6 +1,8 @@
 ---
 import { Image } from "astro:assets";
+
 import githubIcon from "src/images/icons/github-mark.svg";
+import linkedInIcon from "src/images/icons/In-Blue-128.png";
 
 import Navbar from "@components/UI/Navbar.astro";
 import Layout from "@layouts/Layout.astro";
@@ -31,13 +33,7 @@ import Techstack from "@components/index/Techstack.astro";
               <Image src={githubIcon} class="h-full w-fit" alt="GitHub" />
             </a>
             <a href="#">
-              <img
-                class="h-full"
-                src="/src/images/icons/In-Blue-128.png"
-                decoding="async"
-                loading="lazy"
-                alt="Logo of the dart programming language"
-              />
+              <Image src={linkedInIcon} class="h-full w-fit" alt="LinkedIn" />
             </a>
           </div>
         </div>

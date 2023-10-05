@@ -1,42 +1,26 @@
+---
+import { Image } from "astro:assets";
+
+import javaIcon from "src/images/icons/Java.svg";
+import javascriptIcon from "src/images/icons/Javascript.svg";
+import svelteIcon from "src/images/icons/svelte.svg";
+import flutterIcon from "src/images/icons/flutter.svg";
+import dartIcon from "src/images/icons/dart.svg";
+---
+
 <div class="container mx-auto pt-16">
   <div class="flex flex-row gap-8 h-24 justify-center flex-wrap">
     <p class="text-xl self-center border-r-black border-r-2 pr-8">
       <b>My tech</b>
     </p>
-    <img
-      class="h-full"
-      src="/src/images/icons/Java.svg"
-      decoding="async"
-      loading="lazy"
-      alt="Logo of the dart programming language"
-    />
-    <img
-      class="h-full"
-      src="/src/images/icons/Javascript.svg"
-      decoding="async"
-      loading="lazy"
-      alt="Logo of the dart programming language"
-    />
-    <img
-      class="h-full"
-      src="/src/images/icons/svelte.svg"
-      decoding="async"
-      loading="lazy"
-      alt="Logo of the dart programming language"
-    />
-    <img
-      class="h-full"
-      src="/src/images/icons/flutter.svg"
-      decoding="async"
-      loading="lazy"
-      alt="Logo of the dart programming language"
-    />
-    <img
-      class="h-full"
-      src="/src/images/icons/dart.svg"
-      decoding="async"
-      loading="lazy"
-      alt="Logo of the dart programming language"
-    />
+    <Image src={javaIcon} class="h-full w-fit" alt="Java icon" />
+
+    <Image src={javascriptIcon} class="h-full w-fit" alt="JavaScript icon" />
+
+    <Image src={svelteIcon} class="h-full w-fit" alt="Svelte icon" />
+
+    <Image src={flutterIcon} class="h-full w-fit" alt="Flutter icon" />
+
+    <Image src={dartIcon} class="h-full w-fit" alt="Dart icon" />
   </div>
 </div>
