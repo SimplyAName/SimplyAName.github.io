@@ -1,4 +1,7 @@
 ---
+import { Image } from "astro:assets";
+import githubIcon from "src/images/icons/github-mark.svg";
+
 import Navbar from "@components/UI/Navbar.astro";
 import Layout from "@layouts/Layout.astro";
 import Techstack from "@components/index/Techstack.astro";
@@ -25,13 +28,7 @@ import Techstack from "@components/index/Techstack.astro";
           <br />
           <div class="flex flex-row h-12 gap-4 justify-center md:justify-start">
             <a href="#">
-              <img
-                class="h-full"
-                src="/src/images/icons/github-mark.svg"
-                decoding="async"
-                loading="lazy"
-                alt="GitHub"
-              />
+              <Image src={githubIcon} class="h-full w-fit" alt="GitHub" />
             </a>
             <a href="#">
               <img
