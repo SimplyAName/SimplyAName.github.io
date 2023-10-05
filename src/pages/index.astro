@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 
 import githubIcon from "src/images/icons/github-mark.svg";
 import linkedInIcon from "src/images/icons/In-Blue-128.png";
+import profileImage from "src/images/me.jpg";
 
 import Navbar from "@components/UI/Navbar.astro";
 import Layout from "@layouts/Layout.astro";
@@ -41,12 +42,10 @@ import Techstack from "@components/index/Techstack.astro";
         <div
           class="flex flex-row justify-center order-first md:basis-1/3 md:order-none"
         >
-          <img
+          <Image
+            src={profileImage}
             class="rounded-full border-solid border-simply-purple border-2 shadow-lg dark:shadow-black/30 w-2/3 md:w-full"
-            src="/src/images/me.jpg"
-            decoding="async"
-            loading="lazy"
-            alt="Logo of the dart programming language"
+            alt="Java icon"
           />
         </div>
         <div class="md:flex-grow"></div>
