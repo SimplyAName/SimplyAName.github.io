@@ -2,10 +2,13 @@
 import { Icon } from "astro-icon";
 ---
 
-<nav class="drop-shadow bg-white flex flex-row justify-between h-16 sticky p-4">
+<nav class="drop-shadow bg-white flex flex-row h-16 sticky p-4">
   <div class="text-3xl">
     <b>Loney.Dev</b>
   </div>
+
+  <div class="flex flex-grow"></div>
+
   <ul class="hidden md:flex md:flex-row gap-4 text-2xl">
     <a href="/">
       <b>Home</b>
@@ -20,18 +23,18 @@ import { Icon } from "astro-icon";
       <b>Contact</b>
     </a>
   </ul>
-  <ul class="md:hidden flex flex-row gap-2 text-2xl">
-    <a href="/">
-      <Icon name="mdi:home-outline" class="h-full" />
-    </a>
+  <ul class="md:hidden flex flex-row-reverse gap-2 text-2xl">
     <a href="/">
       <Icon name="mdi:information-outline" class="h-full" />
+    </a>
+    <a href="/">
+      <Icon name="mdi:email-outline" class="h-full" />
     </a>
     <a href="/">
       <Icon name="mdi:folder-multiple-outline" class="h-full" />
     </a>
     <a href="/">
-      <Icon name="mdi:email-outline" class="h-full" />
+      <Icon name="mdi:home-outline" class="h-full" />
     </a>
   </ul>
 </nav>
