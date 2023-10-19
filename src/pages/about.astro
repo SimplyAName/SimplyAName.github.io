@@ -1,13 +1,86 @@
 ---
-import Navbar from "@components/UI/Navbar.astro";
 import Layout from "@layouts/Layout.astro";
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon";
+
+import profileImage from "src/images/me.jpg";
 ---
 
-<Layout title="The Loney Dev - Michael Loney">
-  <!-- Top Section -->
-  <div
-    class="h-screen bg-gradient-to-b from-gray-50 from-[88%] to-simply-purple to-90%"
-  >
-    <Navbar />
+<Layout title="About - The Loney Dev">
+  <h1 class="text-3xl md:text-5xl text-center"><b>About me</b></h1>
+
+  <br />
+
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row gap-4 items-center">
+      <div class="basis-1/2">
+        <Image
+          src={profileImage}
+          alt="about me image"
+          class="h-full w-2/3 md:w-fit rounded-lg transition ease-in-out hover:scale-105"
+        />
+      </div>
+      <div class="text-lg">
+        <p>
+          Hey, I'm Michael. A software developer based in Cardiff, Wales <a
+            id="map-button">📍</a
+          >
+        </p>
+        <iframe
+          id="cardiff-map"
+          class="hidden w-1/2 h-64"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79475.00591000434!2d-3.2874498090988!3d51.50231874339408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e02d434ec53f5%3A0x143406db6586670e!2sCardiff!5e0!3m2!1sen!2suk!4v1697720990706!5m2!1sen!2suk"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br />
+
+        <p>
+          I've been interested in software development from a young age starting
+          in high school. There I got my GCSE and A-Level in computing achieving
+          an "A" in both. From there I went to Swansea university to continue my
+          study in Computer Science.
+        </p>
+        <br />
+
+        <p>
+          While at university I started a company with my housemate Tom called
+          GAIN.
+        </p>
+        <p>
+          It was a social discount platform where I built both the website using
+          Laravel
+          <Icon name="logos:laravel" class="h-4 inline" />
+           and mobile app using Flutter
+          <Icon name="logos:flutter" class="h-4 inline" /> and then published
+          them to the Google Play <Icon
+            name="logos:google-play-icon"
+            class="h-4 inline"
+          /> and IOS App Store <Icon
+            name="logos:apple-app-store"
+            class="h-4 inline"
+          />.
+        </p>
+        <br />
+
+        <p>
+          After university I've been working in Java <Icon
+            name="logos:java"
+            class="h-4 inline"
+          /> at IQUW as part of the bespoke development team. There I have
+          expanded my DevOps knowledge in CI/CD as well as how to deliver
+          production level application as part of a business.
+        </p>
+      </div>
+    </div>
   </div>
+
+  <script>
+    let map = document.querySelector("#cardiff-map");
+    let mapButton = document.querySelector("#map-button");
+
+    mapButton?.addEventListener("click", () => {
+      map?.classList.toggle("hidden");
+    });
+  </script>
 </Layout>
