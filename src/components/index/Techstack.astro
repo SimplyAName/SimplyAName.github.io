@@ -7,6 +7,7 @@ import javascriptIcon from "src/images/icons/Javascript.svg";
 import svelteIcon from "src/images/icons/Svelte.svg";
 import flutterIcon from "src/images/icons/Flutter.svg";
 import dartIcon from "src/images/icons/dart.svg";
+import Icon from "astro-icon";
 ---
 
 <div class="container mx-auto py-16">
@@ -33,6 +34,11 @@ import dartIcon from "src/images/icons/dart.svg";
       alt="JavaScript icon"
     />
 
+    <Icon
+      name="logos:laravel"
+      class="h-full w-fit transition ease-in-out hover:-translate-y-4"
+    />
+
     <Image
       src={svelteIcon}
       class="h-full w-fit transition ease-in-out hover:-translate-y-4"
@@ -42,15 +48,15 @@ import dartIcon from "src/images/icons/dart.svg";
     <div class="bg-black w-0.5 h-1/2"></div>
 
     <Image
-      src={flutterIcon}
-      class="h-full w-fit transition ease-in-out hover:-translate-y-4"
-      alt="Flutter icon"
-    />
-
-    <Image
       src={dartIcon}
       class="h-full w-fit transition ease-in-out hover:-translate-y-4"
       alt="Dart icon"
+    />
+
+    <Image
+      src={flutterIcon}
+      class="h-full w-fit transition ease-in-out hover:-translate-y-4"
+      alt="Flutter icon"
     />
   </div>
 </div>
