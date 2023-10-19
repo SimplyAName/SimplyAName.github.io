@@ -1,26 +1,19 @@
 ---
-import Navbar from "@components/UI/Navbar.astro";
 import Layout from "@layouts/Layout.astro";
 import Techstack from "@components/index/Techstack.astro";
 import BioBlock from "@components/index/BioBlock.astro";
 ---
 
-<Layout title="The Loney Dev - Michael Loney">
-  <!-- Top Section -->
-  <div
-    class="h-screen bg-gradient-to-b from-gray-50 from-[88%] to-simply-purple to-90% flex flex-col"
-  >
-    <Navbar />
+<Layout title="Michael Loney - The Loney Dev">
+  <div class="flex-grow"></div>
 
-    <div class="flex-grow"></div>
-
-    <div class="container mx-auto basis-2/3">
-      <!-- Bio block -->
-      <BioBlock />
-      <!-- Tech stack -->
-      <Techstack />
-    </div>
-
-    <div class="flex-grow"></div>
+  <div class="container mx-auto basis-2/3">
+    <!-- Bio block -->
+    <BioBlock />
+    <br />
+    <!-- Tech stack -->
+    <Techstack />
   </div>
+
+  <div class="flex-grow"></div>
 </Layout>

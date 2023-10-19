@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 
 import javaIcon from "src/images/icons/Java.svg";
+import SpringIcon from "src/images/icons/spring.svg";
 import javascriptIcon from "src/images/icons/Javascript.svg";
 import svelteIcon from "src/images/icons/Svelte.svg";
 import flutterIcon from "src/images/icons/Flutter.svg";
@@ -9,42 +10,47 @@ import dartIcon from "src/images/icons/dart.svg";
 ---
 
 <div class="container mx-auto py-16">
-  <div class="flex flex-col md:flex-row gap-8 md:h-24 justify-center">
-    <p class="text-xl self-center md:border-r-black md:border-r-2 md:pr-8">
-      <b>My tech</b>
-    </p>
-    <div
-      class="flex flex-row gap-4 md:gap-8 h-16 justify-center w-full md:w-fit md:h-full"
-    >
-      <Image
-        src={javaIcon}
-        class="h-full w-fit transition ease-in-out hover:-translate-y-4"
-        alt="Java icon"
-      />
+  <div
+    class="flex flex-row flex-wrap gap-4 md:gap-8 h-24 justify-center items-center"
+  >
+    <Image
+      src={javaIcon}
+      class="h-full w-fit transition ease-in-out hover:-translate-y-4"
+      alt="Java icon"
+    />
 
-      <Image
-        src={javascriptIcon}
-        class="h-full w-fit transition ease-in-out hover:-translate-y-4"
-        alt="JavaScript icon"
-      />
+    <Image
+      src={SpringIcon}
+      class="h-full w-fit transition ease-in-out hover:-translate-y-4"
+      alt="Java icon"
+    />
 
-      <Image
-        src={svelteIcon}
-        class="h-full w-fit transition ease-in-out hover:-translate-y-4"
-        alt="Svelte icon"
-      />
+    <div class="bg-black w-0.5 h-1/2"></div>
 
-      <Image
-        src={flutterIcon}
-        class="h-full w-fit transition ease-in-out hover:-translate-y-4"
-        alt="Flutter icon"
-      />
+    <Image
+      src={javascriptIcon}
+      class="h-full w-fit transition ease-in-out hover:-translate-y-4"
+      alt="JavaScript icon"
+    />
 
-      <Image
-        src={dartIcon}
-        class="h-full w-fit transition ease-in-out hover:-translate-y-4"
-        alt="Dart icon"
-      />
-    </div>
+    <Image
+      src={svelteIcon}
+      class="h-full w-fit transition ease-in-out hover:-translate-y-4"
+      alt="Svelte icon"
+    />
+
+    <div class="bg-black w-0.5 h-1/2"></div>
+
+    <Image
+      src={flutterIcon}
+      class="h-full w-fit transition ease-in-out hover:-translate-y-4"
+      alt="Flutter icon"
+    />
+
+    <Image
+      src={dartIcon}
+      class="h-full w-fit transition ease-in-out hover:-translate-y-4"
+      alt="Dart icon"
+    />
   </div>
 </div>

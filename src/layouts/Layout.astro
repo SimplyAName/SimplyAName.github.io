@@ -1,8 +1,9 @@
 ---
-
 interface Props {
   title: string;
 }
+
+import Navbar from "@components/UI/Navbar.astro";
 
 const { title } = Astro.props;
 ---
@@ -18,7 +19,15 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="bg-simply-purple h-full">
-    <slot />
+    <div
+      class="h-screen bg-gradient-to-b from-gray-50 from-[88%] to-simply-purple to-90%"
+    >
+      <Navbar />
+
+      <br />
+
+      <slot />
+    </div>
   </body>
 </html>
 <style is:global>
