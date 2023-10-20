@@ -5,15 +5,17 @@ import BioBlock from "@components/index/BioBlock.astro";
 ---
 
 <Layout title="Michael Loney - The Loney Dev">
-  <div class="flex-grow"></div>
+  <div class="flex md:flex-col h-2/3">
+    <div class="flex-grow"></div>
 
-  <div class="container mx-auto basis-2/3">
-    <!-- Bio block -->
-    <BioBlock />
-    <br />
-    <!-- Tech stack -->
-    <Techstack />
+    <div class="container mx-auto basis-2/3">
+      <!-- Bio block -->
+      <BioBlock />
+      <br />
+      <!-- Tech stack -->
+      <Techstack />
+    </div>
+
+    <div class="flex-grow"></div>
   </div>
-
-  <div class="flex-grow"></div>
 </Layout>
