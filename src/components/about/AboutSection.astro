@@ -1,0 +1,146 @@
+---
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon";
+
+import profileImage from "src/images/me.jpg";
+
+import ersBuildingImage from "src/images/ers-iquw-building.jpg";
+
+import threeDPrinterImage from "src/images/3d-print-example.jpg";
+---
+
+<div>
+  <h1 class="text-3xl md:text-5xl text-center"><b>About me</b></h1>
+
+  <br />
+
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col gap-4 items-center">
+      <div class="text-lg">
+        <!-- TODO: Replace with a smaller profile pic -->
+        <Image
+          src={profileImage}
+          alt="Image of Michael Loney"
+          class="w-1/3 md:w-auto md:h-96 mx-4 float-left rounded-xl transition ease-in-out hover:scale-105"
+        />
+        <p>
+          Hey, I'm Michael Loney. A software developer based in Cardiff, Wales <a
+            id="map-button">📍</a
+          >
+        </p>
+        <iframe
+          id="cardiff-map"
+          class="hidden w-1/2 h-64"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79475.00591000434!2d-3.2874498090988!3d51.50231874339408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e02d434ec53f5%3A0x143406db6586670e!2sCardiff!5e0!3m2!1sen!2suk!4v1697720990706!5m2!1sen!2suk"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br />
+
+        <p>
+          I've been interested in software development from a young age starting
+          in high school. I build some mods for Minecraft and small websites
+          while going through school and left with an "A" in both my GCSE and
+          A-Level in computing.
+        </p>
+        <br />
+
+        <p>
+          I then decided to continue my studies at Swansea university doing
+          Computer Science. There I learnt how to design software with a team <span
+            class="text-red-600">...</span
+          > leaving with a Upper Second-Class Honours (2:1).
+        </p>
+        <br />
+
+        <Image
+          height={"1400"}
+          width={"2926"}
+          class={"float-right w-1/2 md:w-1/3 mx-4 rounded-md transition ease-in-out hover:scale-105"}
+          src={"https://upload.wikimedia.org/wikipedia/commons/b/b0/Swansea_University_Bay_Library_and_students.jpg"}
+          alt={"Swansea university Bay library"}
+        />
+        <p>
+          While I was there I started a company with my housemate Tom Robertson,
+          together we created GAIN. It was a social discount platform that
+          focused on independents stores, cafes and restaurants in a bid to help
+          bring people back to the high street and support their local business.
+        </p>
+        <br />
+
+        <p class="text-red-600">TODO: Insert image of me developing GAIN</p>
+
+        <p>
+          While work on the business I built the website and backend API using
+          Laravel
+          <Icon name="logos:laravel" class="h-4 inline" />
+           and an accompanying mobile app using Flutter
+          <Icon name="logos:flutter" class="h-4 inline" /> and then published it
+          to the Google Play <Icon
+            name="logos:google-play-icon"
+            class="h-4 inline"
+          /> and IOS App Store <Icon
+            name="logos:apple-app-store"
+            class="h-4 inline"
+          />. We went on to <i>gain</i> a few thousand users, around 50 stores
+          all in and around Swansea with it growing every month. We were also in
+          talks with Swansea's Liberty Stadium in how the app can be expanded to
+          be used in the stadium for customers to order from the app and speed
+          up the bars at half time.
+        </p>
+        <br />
+
+        <p>
+          This success didn't last unfortunately as COVID forced us to stop
+          signing up new stores as well it being based on in-store redemptions
+          we were hit very hard. After lockdown we both no longer lived in
+          Swansea as well as near each other so decided to close up shop and
+          focus on new graduate jobs and building up our careers.
+        </p>
+        <br />
+
+        <Image
+          height={"1400"}
+          width={"2926"}
+          class={"float-left w-1/2 md:w-1/4 mx-4 rounded-md transition ease-in-out hover:scale-105"}
+          src={ersBuildingImage}
+          alt={"Swansea university Bay library"}
+        />
+
+        <p>
+          After university, I've have been working at IQUW with Java <Icon
+            name="logos:java"
+            class="h-4 inline"
+          /> as part of the bespoke development team. There I have expanded my
+          DevOps knowledge in CI/CD and how to deliver production-level
+          applications as part of a business.
+        </p>
+        <br />
+
+        <Image
+          height={"1400"}
+          width={"2926"}
+          class={"float-right w-1/2 md:w-1/4 mx-4 rounded-md transition ease-in-out hover:scale-105"}
+          src={threeDPrinterImage}
+          alt={"Swansea university Bay library"}
+        />
+        <p>
+          Nearing the end of university I was looking into 3D printing and I was
+          lucky to receive a new Ender 3 from my friend all clubbing together
+          for my birthday. Since then I have dived in designing my own 3D models
+          using Fusion 360 as well as installing Klipper and some add-ons to the
+          printer itself.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let map = document.querySelector("#cardiff-map");
+    let mapButton = document.querySelector("#map-button");
+
+    mapButton?.addEventListener("click", () => {
+      map?.classList.toggle("hidden");
+    });
+  </script>
+</div>

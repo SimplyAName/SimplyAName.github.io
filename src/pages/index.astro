@@ -2,13 +2,16 @@
 import Layout from "@layouts/Layout.astro";
 import Techstack from "@components/index/Techstack.astro";
 import BioBlock from "@components/index/BioBlock.astro";
+import AboutSection from "@components/about/AboutSection.astro";
+import ProjectsSection from "@components/projects/ProjectsSection.astro";
+import ContactSection from "@components/contact/ContactSection.astro";
 ---
 
 <Layout title="Michael Loney - The Loney Dev">
-  <div class="flex md:flex-col h-2/3">
+  <section class="flex flex-row md:flex-col min-h-screen justify-center">
     <div class="flex-grow"></div>
 
-    <div class="container mx-auto basis-2/3">
+    <div class="container mx-auto md:basis-2/3">
       <!-- Bio block -->
       <BioBlock />
       <br />
@@ -17,5 +20,24 @@ import BioBlock from "@components/index/BioBlock.astro";
     </div>
 
     <div class="flex-grow"></div>
-  </div>
+    <div class="flex-grow"></div>
+  </section>
+
+  <section class="text-white min-h-screen flex flex-col justify-center">
+    <div class="container mx-auto p-4 bg-blue-950 rounded-md">
+      <AboutSection />
+    </div>
+  </section>
+
+  <section class="text-white min-h-screen flex flex-col justify-center">
+    <div class="container mx-auto p-4 bg-blue-950 rounded-md">
+      <ProjectsSection />
+    </div>
+  </section>
+
+  <section class="text-white min-h-screen flex flex-col justify-center">
+    <div class="container mx-auto p-4 bg-blue-950 rounded-md">
+      <ContactSection />
+    </div>
+  </section>
 </Layout>

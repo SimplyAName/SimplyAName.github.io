@@ -12,51 +12,53 @@ import Icon from "astro-icon";
 
 <div class="container mx-auto py-16">
   <div
-    class="flex flex-row flex-wrap gap-4 md:gap-8 h-16 md:h-28 justify-center items-center"
+    class="flex flex-col md:flex-row flex-wrap gap-4 md:gap-8 md:h-28 justify-center items-center"
   >
-    <Image
-      src={javaIcon}
-      class="h-full w-fit transition ease-in-out hover:-translate-y-4"
-      alt="Java icon"
-    />
+    <div class="flex flex-row h-16 md:h-full gap-4 md:gap-8 items-center">
+      <Image
+        src={javaIcon}
+        class="h-full w-fit transition ease-in-out hover:-translate-y-4"
+        alt="Java icon"
+      />
 
-    <Image
-      src={SpringIcon}
-      class="h-full w-fit transition ease-in-out hover:-translate-y-4"
-      alt="Java icon"
-    />
-
+      <Image
+        src={SpringIcon}
+        class="h-full w-fit transition ease-in-out hover:-translate-y-4"
+        alt="Java icon"
+      />
+    </div>
     <div class="bg-black w-0.5 h-1/2"></div>
+    <div class="flex flex-row h-16 md:h-full gap-4 md:gap-8 items-center">
+      <Image
+        src={javascriptIcon}
+        class="h-full w-fit transition ease-in-out hover:-translate-y-4"
+        alt="JavaScript icon"
+      />
 
-    <Image
-      src={javascriptIcon}
-      class="h-full w-fit transition ease-in-out hover:-translate-y-4"
-      alt="JavaScript icon"
-    />
+      <Icon
+        name="logos:laravel"
+        class="h-full w-fit transition ease-in-out hover:-translate-y-4"
+      />
 
-    <Icon
-      name="logos:laravel"
-      class="h-full w-fit transition ease-in-out hover:-translate-y-4"
-    />
-
-    <Image
-      src={svelteIcon}
-      class="h-full w-fit transition ease-in-out hover:-translate-y-4"
-      alt="Svelte icon"
-    />
-
+      <Image
+        src={svelteIcon}
+        class="h-full w-fit transition ease-in-out hover:-translate-y-4"
+        alt="Svelte icon"
+      />
+    </div>
     <div class="bg-black w-0.5 h-1/2"></div>
+    <div class="flex flex-row h-16 md:h-full gap-4 md:gap-8 items-center">
+      <Image
+        src={dartIcon}
+        class="h-full w-fit transition ease-in-out hover:-translate-y-4"
+        alt="Dart icon"
+      />
 
-    <Image
-      src={dartIcon}
-      class="h-full w-fit transition ease-in-out hover:-translate-y-4"
-      alt="Dart icon"
-    />
-
-    <Image
-      src={flutterIcon}
-      class="h-full w-fit transition ease-in-out hover:-translate-y-4"
-      alt="Flutter icon"
-    />
+      <Image
+        src={flutterIcon}
+        class="h-full w-fit transition ease-in-out hover:-translate-y-4"
+        alt="Flutter icon"
+      />
+    </div>
   </div>
 </div>

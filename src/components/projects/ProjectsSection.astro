@@ -1,0 +1,43 @@
+---
+import { Image } from "astro:assets";
+
+let test = "https://placehold.co/600x400";
+---
+
+<div class="container mx-auto">
+  <h1 class="text-3xl md:text-5xl text-center"><b>Example Projects</b></h1>
+
+  <br />
+
+  <div class="flex flex-row flex-wrap gap-4 justify-center">
+    <div class="bg-gray-400 rounded-sm">
+      <h3>Project 1</h3>
+      <Image src={test} alt="Placeholder" width="400" height="600" />
+    </div>
+
+    <div class="bg-gray-400 rounded-sm">
+      <h3>Project 2</h3>
+      <Image src={test} alt="Placeholder" width="400" height="600" />
+    </div>
+
+    <div class="bg-gray-400 rounded-sm">
+      <h3>Project 3</h3>
+      <Image src={test} alt="Placeholder" width="400" height="600" />
+    </div>
+
+    <div class="bg-gray-400 rounded-sm">
+      <h3>Project 4</h3>
+      <Image src={test} alt="Placeholder" width="400" height="600" />
+    </div>
+
+    <div class="bg-gray-400 rounded-sm">
+      <h3>Project 5</h3>
+      <Image src={test} alt="Placeholder" width="400" height="600" />
+    </div>
+
+    <div class="bg-gray-400 rounded-sm">
+      <h3>Project 6</h3>
+      <Image src={test} alt="Placeholder" width="400" height="600" />
+    </div>
+  </div>
+</div>
